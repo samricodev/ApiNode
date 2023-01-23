@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTES | CURSOS</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            background-color: #202020;
+            color: #eee;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        div{
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 2rem;
+        }
+
+        div a{
+            color: royalblue;
+            text-decoration: none;
+        }
+
+        div a:hover{
+            color: cornflowerblue;
+        }
+
+        div ul{
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Guide api routes</h2>
+    <div>
+        <h3>These are the routes to see the info requiered</h3>
+        <ul>
+            <li>All courses <a href="http://127.0.0.1:3000/api/v1/cursos/">here</a></li>
+            <li>Math courses<a href="http://127.0.0.1:3000/api/v1/cursos/matematicas"> here</a></li>
+            <li>Programming courses<a href="http://127.0.0.1:3000/api/v1/cursos/programacion"> here</a></li>
+        </ul>
+        <p>Install the JSON Viewer extension for a better data format</p>
+    </div>
+</body>
+</html>
