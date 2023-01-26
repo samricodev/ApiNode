@@ -8,7 +8,9 @@ const router = express.Router();
 const routerMatematicas = require('./routers/matematicas.js');
 const routerProgramacion = require('./routers/programacion.js');
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://api-node-test-samricodev.vercel.app/'
+}));
 app.use('/api/v1', router);
 app.use('/api/v1/cursos/programacion', routerProgramacion);
 app.use('/api/v1/cursos/matematicas', routerMatematicas);
